@@ -1,6 +1,3 @@
-
-
-
 resource "aws_instance" "back" {
     ami = var.ami
     instance_type = var.instance-type
