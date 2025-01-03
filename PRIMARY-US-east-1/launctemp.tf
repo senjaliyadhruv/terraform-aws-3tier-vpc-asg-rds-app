@@ -15,7 +15,7 @@ resource "aws_launch_template" "frontend" {
   image_id = data.aws_ami.example.id
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.frontend-server-sg.id]
-  key_name = "us-east-1" 
+  key_name = "us-east-1" #chnage the key 
   user_data = filebase64("${path.module}/frontend-lt.sh")
   #default_version = 1
   update_default_version = true
