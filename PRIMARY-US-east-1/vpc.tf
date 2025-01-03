@@ -8,7 +8,7 @@ resource "aws_vpc" "three-tier" {
         Name = "3-tietr-vpc"
     }
 }
-
+# for frontend load balancer 
 resource "aws_subnet" "pub1" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.1.0/24"
@@ -18,7 +18,7 @@ resource "aws_subnet" "pub1" {
     Name = "pub-1a"
   }
 }
-
+# for frontend load balancer 
 resource "aws_subnet" "pub2" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.2.0/24"
@@ -28,7 +28,7 @@ resource "aws_subnet" "pub2" {
     Name = "pub-2b"
   }
 }
-
+#fronend server
 resource "aws_subnet" "prvt3" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.3.0/24"
@@ -37,7 +37,7 @@ resource "aws_subnet" "prvt3" {
     Name = "prvt-3a"
   }
 }
-
+#fronend server
 resource "aws_subnet" "prvt4" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.4.0/24"
@@ -47,7 +47,7 @@ resource "aws_subnet" "prvt4" {
   }
   
 }
-
+#Backend server 
 resource "aws_subnet" "prvt5" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.5.0/24"
@@ -56,7 +56,7 @@ resource "aws_subnet" "prvt5" {
     Name = "prvt-5a"
   }
 }
-
+# Backend Server 
 resource "aws_subnet" "prvt6" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.6.0/24"
@@ -65,7 +65,7 @@ resource "aws_subnet" "prvt6" {
     Name = "prvt-6b"
   }
 }
-
+#rds
 resource "aws_subnet" "prvt7" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.7.0/24"
@@ -74,7 +74,7 @@ resource "aws_subnet" "prvt7" {
     Name = "prvt-7a"
   }
 }
-
+#rds
 resource "aws_subnet" "prvt8" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.8.0/24"
