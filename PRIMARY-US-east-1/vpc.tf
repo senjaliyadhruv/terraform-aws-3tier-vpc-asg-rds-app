@@ -120,7 +120,7 @@ resource "aws_route_table_association" "public-2b" {
 #  creating elastic ip for nat gateway
 
 resource "aws_eip" "eip" {
-  domain = vpc
+  # domain = vpc
 }
 
 #  creating nat gateway
