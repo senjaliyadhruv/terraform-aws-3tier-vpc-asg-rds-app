@@ -1,35 +1,29 @@
 variable "rds-password" {
-    description = "rds password"
-    type = string
-    default = "srivardhan"
-  
+  description = "rds password"
+  type        = string
+  default     = "Dhruv@123"
 }
 variable "rds-username" {
-    description = "rds username"
-    type = string
-    default = "admin"
-  
+  description = "rds username"
+  type        = string
+  default     = "admin"
 }
 variable "ami" {
-    description = "ami"
-    type = string
-    default = "ami-04b70fa74e45c3917"
-  
+  description = "ami"
+  type        = string
+  default     = "ami-05ffe3c48a9991133"
 }
 variable "instance-type" {
-    description = "instance-type"
-    type = string
-    default = "t2.micro"
-  
+  description = "instance-type"
+  type        = string
+  default     = "t2.micro"
 }
 variable "key-name" {
-    description = "keyname"
-    type = string
-    default = "us-east-1"
-  
+  description = "keyname"
+  type        = string
+  default     = "ec2"
 }
-variable "backupr-retention" {
-    type = number
-    default = "7"
-  
+variable "backup-retention" {
+  type    = number
+  default = "7"
 }

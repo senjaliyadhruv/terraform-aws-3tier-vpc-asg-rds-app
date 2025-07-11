@@ -146,37 +146,37 @@ resource "aws_route_table" "three-tier-pvt-rt" {
 }
 
 #  attaching pvt-3a subnet to private route table
-resource "aws_route_table_association" "prvivate-3a" {
+resource "aws_route_table_association" "private-3a" {
   route_table_id = aws_route_table.three-tier-pvt-rt.id
   subnet_id      = aws_subnet.pvt3.id
 }
 
 #  attaching pvt-4b subnet to private route table
-resource "aws_route_table_association" "prvivate-4b" {
+resource "aws_route_table_association" "private-4b" {
   route_table_id = aws_route_table.three-tier-pvt-rt.id
   subnet_id      = aws_subnet.pvt4.id
 }
 
 #  attaching pvt-5a subnet to private route table
-resource "aws_route_table_association" "prvivate-5a" {
+resource "aws_route_table_association" "private-5a" {
   route_table_id = aws_route_table.three-tier-pvt-rt.id
   subnet_id      = aws_subnet.pvt5.id
 }
 
 #  attaching pvt-6b subnet to private route table
-resource "aws_route_table_association" "prvivate-6b" {
+resource "aws_route_table_association" "private-6b" {
   route_table_id = aws_route_table.three-tier-pvt-rt.id
   subnet_id      = aws_subnet.pvt6.id
 }
 
 #  attaching pvt-7a subnet to private route table
-resource "aws_route_table_association" "prvivate-7a" {
+resource "aws_route_table_association" "private-7a" {
   route_table_id = aws_route_table.three-tier-pvt-rt.id
   subnet_id      = aws_subnet.pvt7.id
 }
 
 #  attaching pvt-8b subnet to private route table
-resource "aws_route_table_association" "prvivate-8b" {
+resource "aws_route_table_association" "private-8b" {
   route_table_id = aws_route_table.three-tier-pvt-rt.id
   subnet_id      = aws_subnet.pvt8.id
 }
