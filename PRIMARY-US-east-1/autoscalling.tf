@@ -2,8 +2,8 @@
 resource "aws_autoscaling_group" "frontend-asg" {
   name_prefix         = "frontend-asg"
   desired_capacity    = 1
-  max_size            = 2
-  min_size            = 1
+  max_size            = 5
+  min_size            = 2
   vpc_zone_identifier = [aws_subnet.pvt3.id, aws_subnet.pvt4.id]
   target_group_arns   = [aws_lb_target_group.front_end.arn]
 
@@ -29,14 +29,27 @@ resource "aws_autoscaling_group" "frontend-asg" {
     propagate_at_launch = true
   }
 }
+resource "aws_autoscaling_policy" "scale_out" {
+  name                   = "scale-out"
+  policy_type            = "TargetTrackingScaling"
+  autoscaling_group_name = aws_autoscaling_group.frontend-asg.name
+
+  target_tracking_configuration {
+    predefined_metric_specification {
+      predefined_metric_type = "ASGAverageCPUUtilization"
+    }
+
+    target_value = 10 # When average CPU crosses 10%
+  }
+}
 
 #####################################################################
 # Autoscaling Group Resource
 resource "aws_autoscaling_group" "backend-asg" {
   name_prefix         = "backend-asg"
   desired_capacity    = 1
-  max_size            = 2
-  min_size            = 1
+  max_size            = 5
+  min_size            = 2
   vpc_zone_identifier = [aws_subnet.pvt5.id, aws_subnet.pvt6.id]
   target_group_arns   = [aws_lb_target_group.back_end.arn]
   health_check_type   = "EC2"
@@ -62,3 +75,17 @@ resource "aws_autoscaling_group" "backend-asg" {
     propagate_at_launch = true
   }
 }
+resource "aws_autoscaling_policy" "scale_out1" {
+  name                   = "scale-out"
+  policy_type            = "TargetTrackingScaling"
+  autoscaling_group_name = aws_autoscaling_group.backend-asg.name
+
+  target_tracking_configuration {
+    predefined_metric_specification {
+      predefined_metric_type = "ASGAverageCPUUtilization"
+    }
+
+    target_value = 10 # When average CPU crosses 10%
+  }
+}
+
