@@ -76,6 +76,7 @@ terraform apply -var-file="terraform.tfvars"
 
 ## 📐 Multi-Region High Availability Architecture (ASCII)
 
+```
                         🌍 Internet Users
                               │
                               ▼
@@ -124,6 +125,7 @@ terraform apply -var-file="terraform.tfvars"
          │ Launch Template Copy   │
          │ (Region 2, AMI-based)  │
          └────────────────────────┘
+```
 ---
 
 ## 🧠 Key Concepts Implemented
