@@ -156,6 +156,6 @@ Cloud & DevOps Engineer
 📧 [Email](mailto:senjaliyadhruvr@gmail.com)  
 🌐 [Portfolio](https://www.dhruvs.info)  
 💼 [LinkedIn](https://linkedin.com/in/senjaliyadhruv)  
-💻 [GitHub](https://github.com/senjaliyadhruvr)
+💻 [GitHub](https://github.com/senjaliyadhruv)
 
 > If you found this helpful or impressive, please ⭐ star the repo and connect on LinkedIn.
