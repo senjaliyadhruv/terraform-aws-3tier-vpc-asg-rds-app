@@ -141,10 +141,10 @@ terraform apply -var-file="terraform.tfvars"
 
 ## 🔗 Related Projects
 
-- [🔧 Ansible 3-Tier Deployment](https://github.com/senjaliyadhruvr/ansible-3-tier-deployment)  
+- [🔧 Ansible 3-Tier Deployment](https://github.com/senjaliyadhruv/ansible-3-tier-deployment.git)  
   Automate app deployment with Ansible over this infrastructure.
 
-- [🚀 Kubernetes App Deployment](https://github.com/senjaliyadhruvr/Kubernetes-main)  
+- [🚀 Kubernetes App Deployment](https://github.com/senjaliyadhruvr/Kubernetes-main.git)  
   Containerize and deploy multi-tier apps using Kubernetes & Helm.
 
 ---
