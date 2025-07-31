@@ -71,6 +71,8 @@ cd ../SECONDARY-US-west-2/
 terraform init
 terraform plan -var-file="terraform.tfvars"
 terraform apply -var-file="terraform.tfvars"
+```
+---
 
 ## 📐 Multi-Region High Availability Architecture (ASCII)
 
