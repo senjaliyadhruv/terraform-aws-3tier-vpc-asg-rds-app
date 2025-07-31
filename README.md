@@ -136,3 +136,26 @@ terraform apply -var-file="terraform.tfvars"
 - ⚙️ ASG with Health Checks and Auto Healing
 - 🔒 SSH Bastion used to access EC2s securely
 - 🔁 Fully **Terraform-driven**, idempotent setup
+
+  ---
+
+## 🔗 Related Projects
+
+- [🔧 Ansible 3-Tier Deployment](https://github.com/senjaliyadhruvr/ansible-3-tier-deployment)  
+  Automate app deployment with Ansible over this infrastructure.
+
+- [🚀 Kubernetes App Deployment](https://github.com/senjaliyadhruvr/Kubernetes-main)  
+  Containerize and deploy multi-tier apps using Kubernetes & Helm.
+
+---
+
+## 🙋‍♂️ Author
+
+**Dhruv Senjaliya**  
+Cloud & DevOps Engineer  
+📧 [Email](mailto:senjaliyadhruvr@gmail.com)  
+🌐 [Portfolio](https://www.dhruvs.info)  
+💼 [LinkedIn](https://linkedin.com/in/senjaliyadhruv)  
+💻 [GitHub](https://github.com/senjaliyadhruvr)
+
+> If you found this helpful or impressive, please ⭐ star the repo and connect on LinkedIn.
